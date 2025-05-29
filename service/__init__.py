@@ -1,0 +1,4 @@
+from configuration import environment_configuration_bean
+from service.translation_service import TranslationService
+
+translation_service_bean = TranslationService(env=environment_configuration_bean)
