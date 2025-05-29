@@ -69,7 +69,7 @@ services:
   i18n:
     image: ghcr.io/pingmyheart/py-i18n-service:${VERSION}
     environment:
-      - TRANSLATIO_FOLDER=/opt/i18n/translation
+      - TRANSLATION_FOLDER=/opt/i18n/translation
     volumes:
       - ./translation:/opt/i18n/translation
 ```
