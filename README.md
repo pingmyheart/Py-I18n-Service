@@ -72,10 +72,12 @@ services:
       - TRANSLATION_FOLDER=/opt/i18n/translation
     volumes:
       - ./translation:/opt/i18n/translation
+    ports:
+      - "8080:8080"
 ```
 
 # Usage
 
 ```bash
-curl --location 'localhost:5000/py-i18n-service/translation?key=placeholder.insertion.dateTime&language=en'
+curl --location 'localhost:8080/py-i18n-service/translation?key=placeholder.insertion.dateTime&language=en'
 ```
