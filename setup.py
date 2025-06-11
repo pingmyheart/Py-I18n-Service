@@ -7,6 +7,6 @@ warnings.filterwarnings("ignore")
 
 setup(
     name='py-i18n-service',
-    version='0.0.2.dev0',
+    version='0.0.3.dev0',
     packages=find_packages()
 )
